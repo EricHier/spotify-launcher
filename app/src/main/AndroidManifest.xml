@@ -16,7 +16,8 @@
         <activity
             android:name=".MainActivity"
             android:noHistory="true"
-            android:theme="@android:style/Theme.NoDisplay">
+            android:theme="@android:style/Theme.NoDisplay"
+            android:exported="true">
 
             <intent-filter android:label="spotifylauncher">
                 <action android:name="android.intent.action.VIEW" />
