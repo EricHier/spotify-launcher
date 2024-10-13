@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         if (uri != null) {
             String data = uri.toString().replaceAll("spotifylauncher://", "");
 
+            // Log uri
+            System.out.println(data);
+
             Intent spotifyIntent = new Intent(Intent.ACTION_VIEW);
             spotifyIntent.setData(Uri.parse(data));
             spotifyIntent.putExtra(Intent.EXTRA_REFERRER, Uri.parse("android-app://" + getApplicationContext().getPackageName()));
